@@ -1,0 +1,13 @@
+{
+  "name": "nuuma-dz-website",
+  "private": true,
+  "description": "API + Next.js client. Dependencies live in server/ and client/. Root devDependencies only run both apps together.",
+  "scripts": {
+    "dev": "concurrently -n api,web -c cyan,magenta \"npm run dev --prefix server\" \"cd client && npx next dev\"",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

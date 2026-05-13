@@ -1,0 +1,15 @@
+server/uploads/*
+!server/uploads/.gitkeep
+
+node_modules/
+.next/
+out/
+dist/
+.env
+.env.local
+# Service account keys (do not commit)
+*-service-account*.json
+gcs-credentials.json
+**/gcs-*.json
+*.log
+.DS_Store
