@@ -21,7 +21,7 @@ cp .env.example .env
 npm install
 npx prisma migrate deploy
 # Or during development: npx prisma migrate dev
-npm run seed
+# Optional: npm run seed (connects only; add products in Admin)
 npm run create-admin
 npm run dev
 ```
